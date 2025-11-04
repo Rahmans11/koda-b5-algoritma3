@@ -4,14 +4,10 @@ Menghitung Pembayaran Belanja
 Begin
 Input(S)
   If S >= 500k
-    Input(diskon)
     diskon <- 5%
-    ELSEIf
-    S > 1jt
-    Input(diskon)
+  ELSEIf S > 1jt
     diskon <- 15%
-    ENDIF
-    Input(diskon)
+  ENDIF
     diskon <- 0%
 Output(S * diskon)
 END
