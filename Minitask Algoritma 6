@@ -1,0 +1,17 @@
+Menghitung Pembayaran Belanja
+  Declare S : Integer
+  Declare diskon : Float
+Begin
+Input(S)
+  If S >= 500k
+    Input(diskon)
+    diskon <- 5%
+    ELSEIf
+    S > 1jt
+    Input(diskon)
+    diskon <- 15%
+    ENDIF
+    Input(diskon)
+    diskon <- 0%
+Output(S * diskon)
+END
